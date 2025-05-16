@@ -7,3 +7,4 @@ SQLAlchemy==2.0.40
 psycopg2==2.9.10
 psycopg2-binary==2.9.10
 dateparser==1.2.1
+schedule==1.2.2

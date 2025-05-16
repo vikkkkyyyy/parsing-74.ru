@@ -10,10 +10,10 @@ db_host = os.getenv('DB_HOST')
 db_user = os.getenv('DB_USER')
 db_name = os.getenv('DB_NAME')
 
-print(db_password, db_host, db_user, db_name)
+
 engine = create_engine(
     f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}/{db_name}",
-    echo = True
+    echo = False
 )
 
 session = sessionmaker(engine, expire_on_commit=False)
